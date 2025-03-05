@@ -2243,7 +2243,6 @@
   <block id="ef7c876f00f3acddd00fa671f52d0b1f" category="paragraph">uuid</block>
   <block id="472ec58c29ef9a54cbd559744d4a9c90" category="paragraph">El identificador único del clúster.</block>
   <block id="4ba6dd2d59030fb9ee4b6523df69086c" category="list-text"><block ref="4ba6dd2d59030fb9ee4b6523df69086c" category="inline-link-macro-rx"></block></block>
-  <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>entación]</block>
   <block id="0240dc8e87d832706ecb80b01f87c0a1" category="summary">El objeto clusterPair contiene información acerca de los clústeres emparejados con el clúster local. Se puede recuperar una lista de objetos clusterPair para el clúster local con el método ListClusterPairs.</block>
   <block id="343d28c140c3f5ce20a1ac3f8f7dae2c" category="paragraph">Nombre del clúster</block>
   <block id="3a06c32a878ccae19db7d0f82bd00a47" category="paragraph">El nombre del otro clúster de la pareja.</block>
@@ -6234,7 +6233,6 @@
   <block id="5ce5a4c32220893139a79b7961ce29a5" category="paragraph">El software NetApp Element 10.1 y versiones posteriores admite la funcionalidad de SnapMirror para copiar y restaurar copias Snapshot con sistemas ONTAP.</block>
   <block id="160c1461d4530203bf5d64f7eb1c0982" category="paragraph">Los sistemas que ejecutan Element 10.1 y versiones posteriores incluyen el código que puede comunicarse directamente con SnapMirror en sistemas ONTAP que ejecutan 9.3 o posterior. La API de Element proporciona métodos para habilitar la funcionalidad de SnapMirror en clústeres, volúmenes y copias de Snapshot. Además, la interfaz de usuario de Element incluye la funcionalidad para gestionar las relaciones de SnapMirror entre el software Element y los sistemas ONTAP.</block>
   <block id="62f54381b903447523bd94d04a2364be" category="paragraph">A partir de los sistemas Element 10.3 y ONTAP 9.4, es posible replicar volúmenes originados por ONTAP en volúmenes de Element en casos de uso específicos con funcionalidad limitada.</block>
-  <block id="b3720743bae305bb474d5e403e3739bf" category="paragraph">Para obtener más información, consulte la documentación de ONTAP.</block>
   <block id="ced6f02fa4444aad2c499194d415578f" category="section-title">Snapshots de volumen para proteger los datos</block>
   <block id="6335301e7b2b5f151c62c7dad20c7c1d" category="paragraph">Una copia de Snapshot de volumen es una copia de un momento específico de un volumen que se puede utilizar más adelante para restaurar un volumen a ese momento específico.</block>
   <block id="64ce2a4042bd6dcc85f4453c84c625bd" category="paragraph">Aunque las copias de Snapshot son similares a los clones de volúmenes, las copias de Snapshot son réplicas de los metadatos del volumen, por lo que no se pueden montar ni escribir en ellas. Además, para crear una copia de Snapshot de volumen, solo se requiere una pequeña cantidad de espacio y recursos del sistema, lo cual es más rápido crear una copia de Snapshot que clonar.</block>
@@ -8590,9 +8588,7 @@
   <block id="76f713176b430a51d8711f47a99d0f8a" category="list-text">Asigne la LUN de Element al iGroup correspondiente.</block>
   <block id="57b98362a5b6c4d458251e5989a7cddc" category="list-text">Crear sesiones iSCSI desde los iniciadores de host SAN a los LIF DE SAN.</block>
   <block id="adfba1c6b0a4ee17e069c826350fd982" category="list-text">En el cliente SAN, realice una nueva exploración del almacenamiento para detectar la LUN conectada.</block>
-  <block id="130f26f0f55531f4375c1d794340ee1f" category="summary">Puede crear una política de replicación personalizada mediante la CLI de ONTAP si la política predeterminada para una relación no es adecuada.</block>
   <block id="75f83bbaf7f814729366d9e0bac3638f" category="doc">Cree una política de replicación personalizada</block>
-  <block id="eaf8f20a7ee455b8dc4f49c8782538d9" category="paragraph">Puede usar una política predeterminada o personalizada al crear una relación de replicación con la CLI de ONTAP. Para una política de replicación unificada personalizada, debe definir una o más _rules_ que determinen qué copias de snapshot se transfieren durante la inicialización y actualización.</block>
   <block id="30f6b1249bdeb93367e19f178253fdf9" category="paragraph">Puede crear una directiva de replicación personalizada si la directiva predeterminada para una relación no es adecuada. Se pueden comprimir datos en una transferencia de red, por ejemplo, o modificar el número de intentos que realiza SnapMirror para transferir copias Snapshot.</block>
   <block id="1fac572d0bdbbcd92ac120d658648335" category="paragraph">El _policy type_ de la directiva de replicación determina el tipo de relación que admite. En la siguiente tabla se muestran los tipos de directivas disponibles.</block>
   <block id="551e9178cd3ea95d0d7df735e2e30c6f" category="cell">Tipo de política</block>
@@ -8894,9 +8890,6 @@
   <block id="a5b2d4de2841c516a54a4c4b3db587b1" category="summary">Los sistemas que ejecutan el software NetApp Element admiten la funcionalidad SnapMirror para copiar y restaurar copias Snapshot con los sistemas ONTAP de NetApp.</block>
   <block id="908041e9f7dbdfd6dd76e9617f0b3454" category="doc">Información general de SnapMirror</block>
   <block id="e132a123dcc09df973758d5a0e1b3ecc" category="paragraph">Los sistemas que ejecutan Element pueden comunicarse directamente con SnapMirror en los sistemas ONTAP 9.3 o posteriores. La API de NetApp Element proporciona métodos para habilitar la funcionalidad de SnapMirror en clústeres, volúmenes y snapshots. Además, la interfaz de usuario de Element incluye toda la funcionalidad necesaria para gestionar las relaciones de SnapMirror entre el software Element y los sistemas ONTAP.</block>
-  <block id="5a5a2d3bbdb5fecdea9055d444ee32af" category="paragraph">Es posible replicar volúmenes originados de ONTAP en volúmenes de Element en casos de uso específicos con funcionalidad limitada. Para obtener más información, consulte la documentación de ONTAP.</block>
-  <block id="49c8c279b60ab1926e498dd27ba47ce7" category="inline-link">Replicación entre software de Element y ONTAP</block>
-  <block id="e01755805869b3d9cedc19fff7c5daae" category="paragraph"><block ref="e01755805869b3d9cedc19fff7c5daae" category="inline-link-rx"></block></block>
   <block id="cd7c96dd340046e8b1a1ed84b73227c0" category="summary">En los sistemas de almacenamiento de SolidFire, los inquilinos pueden utilizar las cuentas para permitir que los clientes se conecten a volúmenes en un clúster. También se pueden gestionar cuentas de administrador de clúster para un sistema de almacenamiento SolidFire.</block>
   <block id="d69a8eaf0dfea73cf60506f2c945b71e" category="paragraph">En los sistemas de almacenamiento de SolidFire, los inquilinos pueden utilizar las cuentas para permitir que los clientes se conecten a volúmenes en un clúster. Cuando crea un volumen, este se asigna a una cuenta específica. También se pueden gestionar cuentas de administrador de clúster para un sistema de almacenamiento SolidFire.</block>
   <block id="0de8022e52b232dc0912129174158b7b" category="list-text"><block ref="0de8022e52b232dc0912129174158b7b" category="inline-link-macro-rx"></block></block>
@@ -9269,12 +9262,10 @@
   <block id="ae5e8801344ab06bde696d2ec863ae4a" category="inline-link">Reemplazar un nodo serie H600S con fallos</block>
   <block id="7001df71000b3cb214f8bfa2979d9be7" category="paragraph"><block ref="7001df71000b3cb214f8bfa2979d9be7" category="inline-link-rx"></block></block>
   <block id="a8c738646fb5eef610f0017f7272a70e" category="summary">Puede garantizar la continuidad del negocio en un sistema Element mediante SnapMirror para replicar copias Snapshot de un volumen de Element en un destino de ONTAP.</block>
-  <block id="d85808801414821d0bc5b891306017c3" category="doc">Replicación entre software de NetApp Element y información general de ONTAP</block>
   <block id="564e8ed9dc801e6baa03256281129a07" category="paragraph">Puede garantizar la continuidad del negocio en un sistema Element mediante SnapMirror para replicar copias Snapshot de un volumen de Element en un destino de ONTAP. En caso de desastre en el sitio de Element, podrá seguir prestando servicio a los clientes desde el sistema ONTAP y, a continuación, reactivar el sistema Element cuando el servicio se restaure.</block>
   <block id="34c547b76ee12c36037c1fbd123f8bb7" category="paragraph">A partir de ONTAP 9.4, puede replicar copias de Snapshot de una LUN creada en un nodo ONTAP en otro sistema Element. Puede haber creado una LUN durante una interrupción del servicio en el sitio de Element, o bien podría utilizar una LUN para migrar datos desde ONTAP al software Element.</block>
   <block id="f095051bf202432565bd83b13f223cbe" category="paragraph">Debe trabajar con Element en el backup de ONTAP si se aplica lo siguiente:</block>
   <block id="41a6f75570e8276bfdd8656708159091" category="list-text">Quiere utilizar las prácticas recomendadas, no explorar todas las opciones disponibles.</block>
-  <block id="c8ca568fa4b4ecd54343a9105ffd3d92" category="list-text">Desea usar la interfaz de línea de comandos (CLI) de ONTAP, no la interfaz de usuario de Element, System Manager, storage/concept-element-replication-create-custom-replication-policy o una herramienta de scripting automatizada.</block>
   <block id="83d990511cbb8a6b72c2da3687386ede" category="list-text">Usted utiliza iSCSI para servir datos a los clientes.</block>
   <block id="9ae8f55cfebe47cb9ef25253ceb15709" category="paragraph">Si necesita información conceptual o de configuración adicional de SnapMirror, consulte <block ref="ef3dbddea8dbf43683fb89931b6b3d33" category="inline-link-macro-rx"></block>.</block>
   <block id="44d71452635eeaf5c7a210399ae9d66d" category="section-title">Acerca de la replicación entre Element y ONTAP</block>
@@ -9320,7 +9311,6 @@
   <block id="feaada5a395125a755e15c612cc44149" category="list-text">Debe haber obtenido la licencia de SnapMirror en el clúster de ONTAP.</block>
   <block id="6d74735d1f487a7d257b5cf661f166a9" category="list-text">Debe haber configurado volúmenes en los clústeres de Element y ONTAP que sean lo suficientemente grandes como para manejar las transferencias de datos anticipadas.</block>
   <block id="1c9cc74529c9cbdea35027dbfbe10f61" category="list-text">Si está utilizando el tipo de política «marror-vault», se debe haber configurado una etiqueta SnapMirror para que se repliquen las copias Snapshot de Element.</block>
-  <block id="5a02e24a7c331265015a74b6a9baafa6" category="paragraph">Es posible realizar esta tarea únicamente en la interfaz de usuario web del software Element.</block>
   <block id="29092ab8561df9315028f9475d370804" category="list-text">Debe haberse asegurado de que el puerto 5010 está disponible.</block>
   <block id="ec26990081e21ee38c3e0acab1f5447c" category="list-text">Si prevé que podría necesitar mover un volumen de destino, debe asegurarse de que existe una conectividad de malla completa entre el origen y el destino. Cada nodo del clúster de origen de Element debe poder comunicarse con cada nodo del clúster de destino de ONTAP.</block>
   <block id="c3ffc8e078b339d5886703a912ed9b58" category="section-title">Detalles de soporte</block>
@@ -9996,9 +9986,7 @@
   <block id="5aacf8a7df58d7f3a894e0e0e6ae3d8f" category="paragraph">Es posible habilitar o deshabilitar SNMP. Después de habilitar SNMP, puede elegir qué versión quiere usar. Si utiliza la versión 2, puede añadir solicitantes y, si usa la versión 3, puede configurar usuarios USM.</block>
   <block id="61f39bcca4ea77a73826a2f0c6781250" category="list-text">*Configuración de la captura SNMP*</block>
   <block id="a4edeacf310754a09768eab55b67e3ee" category="paragraph">Puede identificar los retos que quiere recibir. Puede establecer el host, el puerto y la cadena de comunidad para cada destinatario de reto.</block>
-  <block id="1ce256ba457175d5ec9b17ca9bda8cf7" category="summary">A partir de ONTAP 9.4, puede usar la interfaz de línea de comandos de ONTAP para crear una relación que utilice SnapMirror para replicar copias de Snapshot de una LUN creada en un origen de ONTAP de vuelta en un destino de Element.</block>
   <block id="5fd75f621e23582f2c44185301f3d0bc" category="doc">Cree una relación desde un origen de ONTAP a un destino de elemento</block>
-  <block id="f81df90e6adb12b493329cbbb57e4955" category="paragraph">A partir de ONTAP 9.4, puede usar la interfaz de línea de comandos de ONTAP para crear una relación que utilice SnapMirror para replicar copias de Snapshot de una LUN creada en un origen de ONTAP de vuelta en un destino de Element. Es posible que utilice la LUN para migrar datos desde ONTAP al software Element.</block>
   <block id="be02eee8724cea2420e2adf1d07ddeb5" category="list-text">ONTAP debe haber accesible el nodo de destino de Element.</block>
   <block id="86c156b8e19cececc124a0c7c1f2bec9" category="list-text">El volumen de Element debe estar habilitado para la replicación de SnapMirror.</block>
   <block id="671d4984a0edd201ed04cb12a6e7e546" category="paragraph">Debe especificar la ruta de destino del elemento con el formato<block ref="e6c8050b8cd0a398b28edeaa070ef325" prefix=" " category="inline-code"></block>, donde «`lun`» es la cadena real «`lun`» y<block ref="b068931cc450442b63f5b3d276ea4297" prefix=" " category="inline-code"></block> es el nombre del volumen del elemento.</block>
@@ -10010,7 +9998,6 @@
   <block id="9a52d6a5d71c5d44563a5e2f1d1fde56" category="paragraph">Utilice<block ref="8511c2f3ef6c5e8c42a150c01bd8495c" prefix=" " category="inline-code"></block> el comando para verificar que la relación de SnapMirror se ha creado. Para obtener una sintaxis de comando completa, consulte la página man.</block>
   <block id="1b8f57d8466ed9be37f7a96ca1ff045e" category="summary">Puede utilizar el comando job schedule cron create para crear una programación de tareas de replicación. La programación de tareas determina el momento en que SnapMirror actualiza automáticamente la relación de protección de datos a la que se asigna la programación.</block>
   <block id="6e0983de50056fdacdd9550f613eab0a" category="doc">Cree una programación de trabajo de replicación</block>
-  <block id="44baf633dd4bc03a1ab6d0be125c108a" category="paragraph">Con la CLI de ONTAP, puede crear una programación de trabajos de replicación mediante<block ref="859f5842129c4a4759882f44afc53f67" prefix=" " category="inline-code"></block> el comando. La programación de tareas determina el momento en que SnapMirror actualiza automáticamente la relación de protección de datos a la que se asigna la programación.</block>
   <block id="4cd38d835e28dd8e89e58a585a1635ce" category="paragraph">Debe asignar una programación de tareas cuando crea una relación de protección de datos. Si no asigna una programación de trabajo, debe actualizar la relación manualmente.</block>
   <block id="30d4f2aeb7b82779c70416788d971465" category="list-text">Crear un programa de trabajo:</block>
   <block id="81a9fe82fd59a2c04babfe1577b880cc" category="paragraph"><block ref="bedcaa3bb7cb9fb678c133c3f7789c20" prefix="" category="inline-code"></block></block>
@@ -10029,7 +10016,6 @@
   <block id="df857cb0f08264825fefa55878d286ce" category="paragraph">En el siguiente ejemplo, se crea una relación de replicación unificada mediante la<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block> política predeterminada:</block>
   <block id="97fedbfaebdbcfe68bdc2db0e517c79e" category="paragraph">En el siguiente ejemplo se crea una relación de replicación unificada mediante<block ref="4403b8bed8329a1a1ba838d590fec221" prefix=" " category="inline-code"></block> la política:</block>
   <block id="ea71844b20a2af889daba2027461836d" category="paragraph">En el siguiente ejemplo, se crea una relación de replicación unificada mediante la<block ref="7d06ce743afb94fd7161f90acba5f66a" prefix=" " category="inline-code"></block> política personalizada:</block>
-  <block id="393cb83f59911d86cb0cc6143a8b8b15" category="summary">Debe crear un extremo de SnapMirror para poder crear una relación de replicación. Es posible realizar esta tarea únicamente en la interfaz de usuario web del software Element.</block>
   <block id="dedd3700704f998555c9779c076f3d9c" category="doc">Cree un extremo de SnapMirror</block>
   <block id="410d41840bfe4c79d1cbcbad970381ce" category="paragraph">Debe haber habilitado SnapMirror en el clúster de Element.</block>
   <block id="1c405d01246cf1ce44f3d2aca78d23b1" category="list-text">Haga clic en *Protección de datos* &gt; *terminales de SnapMirror*.</block>
@@ -10062,7 +10048,6 @@
   <block id="20cc35bf4f534abf7c8e15480973e9cf" category="paragraph">En el siguiente ejemplo, se agrega una regla con la etiqueta SnapMirror<block ref="2a44471da66622bfc5b82888ae83a7dc" prefix=" " category="inline-code"></block> a la<block ref="1d5de0bd3d87489e1362714791579989" prefix=" " category="inline-code"></block> política personalizada:</block>
   <block id="b0eff705a5813714cb73d5b4afee11b9" category="paragraph">En el siguiente ejemplo, se agrega una regla con la etiqueta SnapMirror<block ref="b17c9a947d4e38d7975718380fab6b7a" prefix=" " category="inline-code"></block> a la<block ref="d8e87c0927539672f54462c837be0b7f" prefix=" " category="inline-code"></block> política personalizada:</block>
   <block id="f0f637ca20caa61073cee1a4ce7e8dfc" category="paragraph">Luego, puede replicar copias Snapshot del clúster de origen que coincidan con esta etiqueta de SnapMirror:</block>
-  <block id="1110b3c9dda10dccac5a64dacf8b5272" category="summary">Es necesario habilitar SnapMirror en el clúster de Element para poder crear una relación de replicación. Es posible realizar esta tarea únicamente en la interfaz de usuario web del software Element.</block>
   <block id="28d0537c10dbc179674ef31f5b5a2bab" category="doc">Habilite SnapMirror en el clúster de Element</block>
   <block id="c0b5b482ba26a5488d37e9a7bc811294" category="list-text">Solo se puede habilitar SnapMirror en clústeres de Element que se usan con los volúmenes de ONTAP de NetApp.</block>
   <block id="4afc20f670cf64f0a4b45231ad8a70ba" category="paragraph">El sistema Element viene con SnapMirror deshabilitado de forma predeterminada. SnapMirror no se habilita automáticamente como parte de una nueva instalación o actualización.</block>
@@ -10070,7 +10055,6 @@
   <block id="446fbff0634d83c1f364b9be13c9b78f" category="list-text">Haga clic en *Clusters* &gt; *Configuración*.</block>
   <block id="2acc5709a6d4640c6b4f34e06be0bedd" category="list-text">Busque la configuración específica del clúster para SnapMirror.</block>
   <block id="4c76080d9f5f428cf8777ab10d3ad89e" category="list-text">Haga clic en *Activar SnapMirror*.</block>
-  <block id="6d42fba9029ac36d49921505785c7e6a" category="summary">Es necesario habilitar SnapMirror en el volumen de origen de Element para poder crear una relación de replicación. Es posible realizar esta tarea únicamente en la interfaz de usuario web del software Element.</block>
   <block id="98d336445179a80880568e07dde510b1" category="doc">Habilite SnapMirror en el volumen de origen de Element</block>
   <block id="56701c635309a5e65d18a7422b09c3cd" category="list-text">El tamaño de bloque del volumen debe ser 512 bytes.</block>
   <block id="b1811edce82ed716d4bc66b1dd1d116f" category="list-text">El volumen no debe participar en la replicación remota de Element.</block>
@@ -11377,8 +11361,6 @@
   <block id="b456d131470ee117b6ff900f949b80c5" category="paragraph"><block ref="b456d131470ee117b6ff900f949b80c5" category="inline-link-rx"></block></block>
   <block id="0ae5c767cabcaa90f5848cabc66f8aa9" category="inline-link">Crear una estructura de datos con NetApp HCI, ONTAP e infraestructura convergente</block>
   <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
-  <block id="5865b8968ae6d9762765ab7ce3d35fc2" category="inline-link">Replicación entre software de NetApp Element y ONTAP</block>
-  <block id="b00bc340461aac1deb8b1a1e1382cf0c" category="list-text"><block ref="b00bc340461aac1deb8b1a1e1382cf0c" category="inline-link-rx"></block></block>
   <block id="8cb89b387c0217f2060ca414b41c63b2" category="summary">Con los clústeres de SolidFire, puede cifrar todos los datos almacenados en el clúster mediante el cifrado basado en software o hardware en reposo.</block>
   <block id="07134dd620fa410023548b639cca1e69" category="doc">Habilite y deshabilite el cifrado en reposo para un clúster</block>
   <block id="b631bf7f00d77eddfcbf6feca367bd11" category="inline-link-macro">cifrado basado en hardware o software en reposo</block>
@@ -12248,7 +12230,6 @@
   <block id="27f2e04c96b5ac3b10c4de8069658227" category="sidebar">Utilice copias Snapshot de grupo para la protección de datos</block>
   <block id="cf35d1bd4f63afd1c731729075f91d65" category="sidebar">ROL realizar backups de volúmenes a una copia de Snapshot de grupo</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">Configurar dominios de protección personalizados</block>
-  <block id="42a1881fef50454fa6bd56b43e9ed96e" category="sidebar">Replicación entre software de NetApp Element y ONTAP</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">Descripción general</block>
   <block id="24f47cdbe9ddba774a7cc53e51d9032e" category="sidebar">Flujo de trabajo</block>
   <block id="49bd24b89b4d379ec9d1baed92d0973e" category="sidebar">Habilite SnapMirror en el software Element</block>
@@ -12267,4 +12248,31 @@
   <block id="1a9f7cf4eade0ea391d219a7acbeea22" category="cell">11093A10</block>
   <block id="a789af7a3f0be8e6b5b27e8f2c902f38" category="cell">110B3A10</block>
   <block id="7a1a50b4f214356238b1fdd7473fb635" category="cell">NAT3.6</block>
+  <block id="66b9246b0ca9a6c1d9cb4b6b245eb37c" category="inline-link-macro">Llevar a cabo la replicación entre software de NetApp Element y ONTAP (CLI de ONTAP)</block>
+  <block id="ca58c1d1dfb5b23925a5e836cadd440f" category="paragraph">Para obtener más información, consulte <block ref="9fff2b653bf9e5c9e6e296244d407e7a" category="inline-link-macro-rx"></block>.</block>
+  <block id="e02d811196d527520d9f9847ef74439d" category="summary">Puede crear una directiva de replicación personalizada si la directiva predeterminada para una relación no es adecuada.</block>
+  <block id="e7cb3e43a84c97395c30e6e4d68129f7" category="paragraph">Puede usar una directiva predeterminada o personalizada al crear una relación de replicación. Para una política de replicación unificada personalizada, debe definir una o más _rules_ que determinen qué copias de snapshot se transfieren durante la inicialización y actualización.</block>
+  <block id="388657e2af54b4f8e121163ca5784693" category="inline-link-macro">Replicación entre software Element y ONTAP (CLI de ONTAP)</block>
+  <block id="a21a4ab90a18959fa37c0c2fb846d63e" category="paragraph">Es posible replicar volúmenes originados de ONTAP en volúmenes de Element en casos de uso específicos con funcionalidad limitada. Para obtener más información, consulte <block ref="92cf2e7a852a772499cb0000a5d5d5ab" category="inline-link-macro-rx"></block>.</block>
+  <block id="188377347aeb6413e806e53020555d56" category="doc">Llevar a cabo la replicación entre el software NetApp Element y la información general de ONTAP (CLI de ONTAP)</block>
+  <block id="1435e27f40347998b5c763bcc4df6b63" category="list-text">Desea usar la interfaz de línea de comandos (CLI) de ONTAP, no System Manager ni una herramienta de secuencias de comandos automatizada.</block>
+  <block id="ffcff48a8900b759122138dc74affc48" category="inline-link-macro">Interfaz de usuario web del software Element</block>
+  <block id="faa03ad90cfa8dd02ce4f68b832e5926" category="inline-link-macro">Métodos API</block>
+  <block id="f3fde60a3a60d61f5adcdf60b79d244d" category="paragraph">Sólo puede realizar esta tarea en el <block ref="b93072557c65ffea9f42510ec69c2114" category="inline-link-macro-rx"></block> o utilizando el <block ref="887e50fc0bb5d7d97f152ed649a55cbc" category="inline-link-macro-rx"></block>.</block>
+  <block id="1743b8faf2fcec8ea2fed428a3ba2746" category="summary">A partir de ONTAP 9.4, se puede usar SnapMirror para replicar copias de snapshots de una LUN creada en un origen de ONTAP en un destino de Element.</block>
+  <block id="4a564490593b9dfe3a2ce1d2fff04fe4" category="paragraph">A partir de ONTAP 9.4, se puede usar SnapMirror para replicar copias de snapshots de una LUN creada en un origen de ONTAP en un destino de Element. Es posible que utilice la LUN para migrar datos desde ONTAP al software Element.</block>
+  <block id="77f7f7ae06760be21bad1e934698a2b6" category="paragraph">Puede utilizar el<block ref="859f5842129c4a4759882f44afc53f67" prefix=" " category="inline-code"></block> comando para crear una programación de trabajo de replicación. La programación de tareas determina el momento en que SnapMirror actualiza automáticamente la relación de protección de datos a la que se asigna la programación.</block>
+  <block id="ec584e493ebc5976220074c48288215d" category="summary">Debe crear un extremo de SnapMirror para poder crear una relación de replicación. Solo puede realizar esta tarea en la interfaz de usuario web del software Element o mediante los métodos API.</block>
+  <block id="9c792937f37fdf96fa76e6e64ade3121" category="paragraph">Debe crear un extremo de SnapMirror para poder crear una relación de replicación. Sólo puede realizar esta tarea en el <block ref="b93072557c65ffea9f42510ec69c2114" category="inline-link-macro-rx"></block> o utilizando el <block ref="9641b9cb3efec10f08ee0a17e27a64d6" category="inline-link-macro-rx"></block>.</block>
+  <block id="2914b577684d6c7f339e6fda22c3487f" category="summary">Es necesario habilitar SnapMirror en el clúster de Element para poder crear una relación de replicación. Solo puede realizar esta tarea en la interfaz de usuario web del software Element o mediante los métodos API.</block>
+  <block id="c229b2f8b428f342bff7cf24ff75f1b2" category="inline-link-macro">Método API</block>
+  <block id="0b8667f1f4456982a27ec231d1a84da6" category="paragraph">Es necesario habilitar SnapMirror en el clúster de Element para poder crear una relación de replicación. Solo puede realizar esta tarea en la interfaz de usuario web del software Element o mediante el <block ref="08aeb663b3e636fd7806da6cd0761563" category="inline-link-macro-rx"></block>.</block>
+  <block id="58d35ba486cdacfc31e43fd6a58950a7" category="summary">Es necesario habilitar SnapMirror en el volumen de origen de Element para poder crear una relación de replicación. Solo puede realizar esta tarea en la interfaz de usuario web del software Element o mediante los métodos API.</block>
+  <block id="5d2e361c0914a6964545e53b54120709" category="paragraph">Es necesario habilitar SnapMirror en el volumen de origen de Element para poder crear una relación de replicación. Solo puede realizar esta tarea en la interfaz de usuario web del software Element o mediante <block ref="ed0492a679a5ccbd40bf302baf82a4fe" category="inline-link-macro-rx"></block>los métodos API y.<block ref="50b3ddadfbe173a030d079ab859844eb" category="inline-link-macro-rx"></block></block>
+  <block id="2338f7e5e83af8d305777617f7d4cf8d" category="paragraph">Es necesario volver a sincronizar una relación de replicación después de hacer que un volumen de destino sea modificable, después de un error en la actualización porque no existe una copia Snapshot común en los volúmenes de origen y destino o si desea cambiar la política de replicación de la relación.</block>
+  <block id="6d5f69495f8e867162efa46a43db438e" category="list-text">Resincronización de los volúmenes de origen y destino:</block>
+  <block id="d6f79eadbe284e92f33838a69bd8773e" category="paragraph"><block ref="a49916945de69e088fe119f58d0d86bf" prefix="" category="inline-code"></block></block>
+  <block id="6af23f20bfbdb73aca33a4deb42fc5b5" category="paragraph">En el ejemplo siguiente se vuelve a sincronizar la relación entre el volumen de origen<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block> en la dirección IP 10.0.0.11 y el volumen de destino<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> en<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>:</block>
+  <block id="6ee6e98dd3f706a9d56d48dbe0b25dcb" category="doc">Usar replicación SnapMirror entre clústeres de Element y ONTAP (IU de Element)</block>
+  <block id="90bed928a242a5706586c0d57bf0fdd4" category="list-text"><block ref="90bed928a242a5706586c0d57bf0fdd4" category="inline-link-macro-rx"></block></block>
 </blocks>

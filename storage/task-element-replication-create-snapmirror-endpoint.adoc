@@ -2,7 +2,7 @@
 permalink: storage/task-element-replication-create-snapmirror-endpoint.html 
 sidebar: sidebar 
 keywords: create, snapmirror, endpoint 
-summary: Debe crear un extremo de SnapMirror para poder crear una relación de replicación. Es posible realizar esta tarea únicamente en la interfaz de usuario web del software Element. 
+summary: Debe crear un extremo de SnapMirror para poder crear una relación de replicación. Solo puede realizar esta tarea en la interfaz de usuario web del software Element o mediante los métodos API. 
 ---
 = Cree un extremo de SnapMirror
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Debe crear un extremo de SnapMirror para poder crear una relación de r
 
 
 [role="lead"]
-Debe crear un extremo de SnapMirror para poder crear una relación de replicación. Es posible realizar esta tarea únicamente en la interfaz de usuario web del software Element.
+Debe crear un extremo de SnapMirror para poder crear una relación de replicación. Sólo puede realizar esta tarea en el link:concept_snapmirror_labels.html["Interfaz de usuario web del software Element"] o utilizando el link:../api/concept_element_api_snapmirror_api_methods.html["Métodos de API de SnapMirror"].
 
 .Antes de empezar
 Debe haber habilitado SnapMirror en el clúster de Element.

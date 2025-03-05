@@ -2,7 +2,7 @@
 permalink: storage/task-element-replication-create-relationship-element-destination.html 
 sidebar: sidebar 
 keywords: ontap, cli, create, relationship, replication, snapmirror 
-summary: A partir de ONTAP 9.4, puede usar la interfaz de línea de comandos de ONTAP para crear una relación que utilice SnapMirror para replicar copias de Snapshot de una LUN creada en un origen de ONTAP de vuelta en un destino de Element. 
+summary: A partir de ONTAP 9.4, se puede usar SnapMirror para replicar copias de snapshots de una LUN creada en un origen de ONTAP en un destino de Element. 
 ---
 = Cree una relación desde un origen de ONTAP a un destino de elemento
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: A partir de ONTAP 9.4, puede usar la interfaz de línea de comandos de 
 
 
 [role="lead"]
-A partir de ONTAP 9.4, puede usar la interfaz de línea de comandos de ONTAP para crear una relación que utilice SnapMirror para replicar copias de Snapshot de una LUN creada en un origen de ONTAP de vuelta en un destino de Element. Es posible que utilice la LUN para migrar datos desde ONTAP al software Element.
+A partir de ONTAP 9.4, se puede usar SnapMirror para replicar copias de snapshots de una LUN creada en un origen de ONTAP en un destino de Element. Es posible que utilice la LUN para migrar datos desde ONTAP al software Element.
 
 .Antes de empezar
 * ONTAP debe haber accesible el nodo de destino de Element.

@@ -1,7 +1,7 @@
 ---
 permalink: storage/concept-element-replication-workflow.html 
 sidebar: sidebar 
-keywords: workflow, replication, element, ontap 
+keywords: workflow, replication, element, ontap, cli 
 summary: Si va a replicar datos de Element en ONTAP o de ONTAP a Element, debe configurar una programación de trabajo, especificar una política y crear e inicializar la relación. Puede usar una directiva predeterminada o personalizada. 
 ---
 = Flujo de trabajo de replicación entre Element y ONTAP

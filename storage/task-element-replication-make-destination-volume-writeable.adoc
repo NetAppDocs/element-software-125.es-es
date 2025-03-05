@@ -1,7 +1,7 @@
 ---
 permalink: storage/task-element-replication-make-destination-volume-writeable.html 
 sidebar: sidebar 
-keywords: make, destination, volume, write 
+keywords: ontap, cli, make, destination, volume, write 
 summary: Debe hacer que el volumen de destino sea editable, para poder proporcionar datos del volumen a los clientes. Puede utilizar el comando snapmirror QUIESCE para detener las transferencias programadas al destino, el comando snapmirror abort para detener las transferencias continuas y el comando snapmirror break para hacer que el destino sea editable. 
 ---
 = Haga que el volumen de destino sea modificable

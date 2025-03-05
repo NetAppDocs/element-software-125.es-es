@@ -1,7 +1,7 @@
 ---
 permalink: storage/task-element-replication-define-rule-policy.html 
 sidebar: sidebar 
-keywords: define, rule, policy 
+keywords: ontap, cli, define, rule, policy 
 summary: Para las políticas personalizadas con el tipo de política «reflejo-almacén», debe definir al menos una regla que determine qué copias de Snapshot se transfieren durante la inicialización y la actualización. También puede definir reglas para las políticas predeterminadas con el tipo de política “mirror-vault”. 
 ---
 = Defina una regla para una política
