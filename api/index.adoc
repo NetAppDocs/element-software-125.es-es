@@ -41,11 +41,3 @@ La API de Element se basa en el protocolo JSON-RPC a través de HTTPS. JSON-RPC 
 * xref:reference_element_api_app_b_access_control.adoc[Control de acceso]
 * xref:concept_element_api_response_examples.adoc[Ejemplos de respuestas]
 
-
-
-
-== Obtenga más información
-
-* https://www.netapp.com/data-storage/solidfire/documentation/["Página de recursos de almacenamiento all-flash de SolidFire"^]
-* http://docs.netapp.com/sfe-122/index.jsp["Centro de documentación de SolidFire y el software Element"^]
-
