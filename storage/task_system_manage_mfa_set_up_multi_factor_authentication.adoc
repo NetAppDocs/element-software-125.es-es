@@ -17,7 +17,7 @@ Los detalles de cada método API se pueden encontrar en el link:../api/index.htm
 
 . Cree una nueva configuración de proveedor de identidades (IdP) de terceros para el clúster llamando al siguiente método API y pasando los metadatos de IdP en formato JSON: `CreateIdpConfiguration`
 +
-Los metadatos de IDP, en formato de texto sin formato, se recuperan del IDP de terceros. Estos metadatos se deben validar para asegurarse de que están formateados correctamente en JSON. Hay numerosas aplicaciones de formateador JSON disponibles que puede utilizar, por ejemplo:https://freeformatter.com/json-escape.html.
+Los metadatos del IdP, en formato de texto sin formato, se obtienen del IdP de terceros. Estos metadatos deben validarse para garantizar que tengan el formato JSON correcto. Existen numerosas aplicaciones de formateo de JSON que puedes utilizar, por ejemplo:https://freeformatter.com/json-escape.html.
 
 . Recupere los metadatos del clúster, a través de spMetadataUrl, para copiar en el IdP de terceros llamando al siguiente método API: `ListIdpConfigurations`
 +
@@ -39,6 +39,7 @@ NOTE: El nombre de usuario del administrador del clúster IDP debe coincidir con
 
 
 
+[[find-more-information]]
 == Obtenga más información
 
 * https://docs.netapp.com/us-en/element-software/index.html["Documentación de SolidFire y el software Element"]
